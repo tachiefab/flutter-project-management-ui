@@ -20,11 +20,11 @@ This Flutter project demonstrates modern UI/UX principles including responsive d
 
 ## 🖼️ Screenshots
 
-| Project List | Project Details |
+|Home Page | Project Details |
 |--------------|-----------------|
-| ![screenshot1](assets/screenshots/project_list.png) | ![screenshot2](assets/screenshots/project_detail.png) |
+| ![screenshot1](assets/screenshots/home_page.jpeg) | ![screenshot2](assets/screenshots/project_detail.png) |
 
-> _You can replace the paths above with actual screenshots from your `/assets/screenshots` folder._
+>
 
 ---
 
