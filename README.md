@@ -42,4 +42,5 @@ This Flutter project demonstrates modern UI/UX principles including responsive d
 
 ```bash
 git clone https://github.com/tachiefab/flutter-project-management-ui
-cd project-management-ui
+
+cd flutter-project-management-ui

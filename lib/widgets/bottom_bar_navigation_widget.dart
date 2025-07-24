@@ -2,15 +2,35 @@
 
 import 'package:flutter/material.dart';
 
-class BottomBarNavigationWidget extends StatelessWidget {
+class BottomBarNavigationWidget extends StatefulWidget {
   const BottomBarNavigationWidget({super.key});
 
   @override
+  State<BottomBarNavigationWidget> createState() =>
+      _BottomBarNavigationWidgetState();
+}
+
+class _BottomBarNavigationWidgetState extends State<BottomBarNavigationWidget> {
+  @override
   Widget build(BuildContext context) {
+    // select index
+    int _selectedIndex = 0;
+
+    void _onTap(index) {
+      setState(() {
+        _selectedIndex = index;
+      });
+    }
+
     return BottomNavigationBar(
+      currentIndex: _selectedIndex,
       selectedItemColor: Colors.black,
       type: BottomNavigationBarType.fixed,
       backgroundColor: Colors.grey.shade200,
+      // selectedItemColor: Colors.pink,
+      // selectedItemColor: Colors.pink, // selected icon and label color
+
+      onTap: _onTap,
       items: [
         // home
         BottomNavigationBarItem(
@@ -24,7 +44,7 @@ class BottomBarNavigationWidget extends StatelessWidget {
         BottomNavigationBarItem(
           icon: Icon(
             Icons.folder,
-            color: Colors.grey,
+            // color: Colors.grey,
           ),
           label: "",
         ),
