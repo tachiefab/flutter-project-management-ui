@@ -25,7 +25,36 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  List<Widget> _pages = [HomeScreen(), TaskListPage()];
+  final List<Widget> _pages = [
+    HomeScreen(),
+    TaskListPage(),
+    // add task page
+    Center(
+      child: Text(
+        "➕ Adding a Task here",
+        style: TextStyle(
+            fontSize: 30, fontWeight: FontWeight.bold, color: Colors.green),
+      ),
+    ),
+
+    // teams page
+    Center(
+      child: Text(
+        "🧑‍🦱 Team Membes",
+        style: TextStyle(
+            fontSize: 30, fontWeight: FontWeight.bold, color: Colors.green),
+      ),
+    ),
+
+    // profile
+    Center(
+      child: Text(
+        "🙅 Profile Page",
+        style: TextStyle(
+            fontSize: 30, fontWeight: FontWeight.bold, color: Colors.green),
+      ),
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
